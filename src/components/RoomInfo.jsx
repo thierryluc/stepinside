@@ -57,6 +57,12 @@ function RoomInfo({ selectedRoom }) {
         className="lightbox"
         overlayClassName="lightbox-overlay"
       >
+        <button
+          className="lightbox-close"
+          onClick={() => setModalIsOpen(false)}
+        >
+          ×
+        </button>
         <img src={room.image} alt={room.title} />
       </Modal>
     </div>
