@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import FloorSVG from "../assets/FinalPathWaysFullSVG.svg?react";
+import FloorSVG from "../assets/LargerSVGFloorPlans.svg?react";
 import RoomInfo from "./RoomInfo";
 import "../styles/MobileTabs.css";
 
@@ -8,20 +8,14 @@ function MobileTabs({ selectedRoom, setSelectedRoom }) {
     const svg = document.querySelector(".floorplan-svg");
     if (!svg) return;
 
-    const allPaths = svg.querySelectorAll("path, rect");
-    allPaths.forEach((path) => path.classList.remove("active"));
+    const ids = ["Livingroom", "Bedroom", "Bathroom", "Balcony"];
 
-    const paths = {
-      living: "M340 376H337.865L246.5 448L204.5 396V376H204V60H340V376Z",
-      bedroom: "M464 196H351V60H464V196Z",
-      balcony:
-        "M333.5 384H464L458.5 429.5L454.5 445.5L451.5 464.5L446 480L435.5 492L423.5 500L407.5 504.5H299.5L253 451.5L333.5 384Z",
-    };
-
-    const targetPath = svg.querySelector(`[d='${paths[selectedRoom]}']`);
-    if (targetPath) {
-      targetPath.classList.add("active");
-    }
+    ids.forEach((id) => {
+      const el = svg.getElementById(id);
+      if (el) {
+        el.classList.toggle("active", selectedRoom === id);
+      }
+    });
   }, [selectedRoom]);
 
   return (
@@ -32,20 +26,26 @@ function MobileTabs({ selectedRoom, setSelectedRoom }) {
 
       <div className="tab-buttons">
         <button
-          className={selectedRoom === "living" ? "active-tab" : ""}
-          onClick={() => setSelectedRoom("living")}
+          className={selectedRoom === "Livingroom" ? "active-tab" : ""}
+          onClick={() => setSelectedRoom("Livingroom")}
         >
           Living Room
         </button>
         <button
-          className={selectedRoom === "bedroom" ? "active-tab" : ""}
-          onClick={() => setSelectedRoom("bedroom")}
+          className={selectedRoom === "Bedroom" ? "active-tab" : ""}
+          onClick={() => setSelectedRoom("Bedroom")}
         >
           Bedroom
         </button>
         <button
-          className={selectedRoom === "balcony" ? "active-tab" : ""}
-          onClick={() => setSelectedRoom("balcony")}
+          className={selectedRoom === "Bathroom" ? "active-tab" : ""}
+          onClick={() => setSelectedRoom("Bathroom")}
+        >
+          Bathroom
+        </button>
+        <button
+          className={selectedRoom === "Balcony" ? "active-tab" : ""}
+          onClick={() => setSelectedRoom("Balcony")}
         >
           Balcony
         </button>

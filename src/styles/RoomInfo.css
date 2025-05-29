@@ -4,6 +4,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.room-info img {
+  width: 100%;
+  height: 320px; /* Or choose a height that works for your layout */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .floorplan-container,
 .room-info {
   max-width: 100%;

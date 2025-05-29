@@ -10,7 +10,7 @@
 }
 
 /* Only apply highlight styles to the three known interactive areas */
-svg [d="M340 376H337.865L246.5 448L204.5 396V376H204V60H340V376Z"]:hover,
+/* svg [d="M340 376H337.865L246.5 448L204.5 396V376H204V60H340V376Z"]:hover,
 svg [d="M464 196H351V60H464V196Z"]:hover,
 svg
   [d="M333.5 384H464L458.5 429.5L454.5 445.5L451.5 464.5L446 480L435.5 492L423.5 500L407.5 504.5H299.5L253 451.5L333.5 384Z"]:hover,
@@ -19,4 +19,17 @@ svg .active {
   stroke: red;
   stroke-width: 2;
   cursor: pointer;
+} */
+
+svg path,
+svg rect {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* When selected */
+svg .active {
+  fill: rgba(204, 44, 0, 0.2);
+  stroke: red;
+  stroke-width: 2;
 }

@@ -9,7 +9,7 @@ import useIsMobile from "./hooks/useIsMobile";
 import "./App.css";
 
 function App() {
-  const [selectedRoom, setSelectedRoom] = useState("living");
+  const [selectedRoom, setSelectedRoom] = useState("Livingroom");
   const isMobile = useIsMobile(); // 👈 use hook
 
   return (
