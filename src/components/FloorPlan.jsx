@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import FloorSVG from "../assets/LargerSVGFloorPlans.svg?react";
+import FloorSVG from "../assets/TransparentBackgroundFloorPlans.svg?react";
 import "../styles/FloorPlan.css";
 
 function FloorPlan({ selectedRoom, setSelectedRoom }) {

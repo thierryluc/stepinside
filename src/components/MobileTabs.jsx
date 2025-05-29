@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import FloorSVG from "../assets/LargerSVGFloorPlans.svg?react";
+import FloorSVG from "../assets/TransparentBackgroundFloorPlans.svg?react";
 import RoomInfo from "./RoomInfo";
 import "../styles/MobileTabs.css";
 
