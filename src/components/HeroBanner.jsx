@@ -1,6 +1,6 @@
 import React from "react";
 import heroBanner from "../assets/HeroBanner.png";
-import "./HeroBanner.css";
+import "../styles/HeroBanner.css";
 
 function HeroBanner() {
   return (

@@ -1,6 +1,6 @@
 .cta-container {
   width: 100%;
-  padding: 2rem 0;
+  padding: 48px 24px;
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -11,10 +11,10 @@
   color: white;
   font-family: "Zodiak", serif;
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.85rem 2rem;
+  font-size: 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 9999px;
+  border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   -webkit-font-smoothing: antialiased;
@@ -30,14 +30,14 @@
     position: sticky;
     bottom: 0;
     background: white;
-    padding: 0; /* remove inner spacing */
+    padding: 0;
     z-index: 10;
   }
 
   .cta-button {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.05rem;
-    border-radius: 0; /* remove pill shape for full width look */
+    padding: 16px;
+    font-size: 15px;
+    border-radius: 0;
   }
 }
