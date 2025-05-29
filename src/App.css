@@ -1,0 +1,38 @@
+@import "./styles/fonts.css";
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jakarta Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Zodiak", serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.floorplan-roominfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* ensures it behaves on smaller screens */
+}
+
+.floorplan-roominfo > * {
+  flex: 1;
+  min-width: 0;
+}

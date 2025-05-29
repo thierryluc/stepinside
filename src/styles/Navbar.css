@@ -1,0 +1,73 @@
+.navbar {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 24px 42px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: 174px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.location {
+  font-family: "Zodiak", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.price-tag {
+  font-size: 18px;
+  color: white;
+  display: inline-flex;
+  padding: 8px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 999px;
+  background: linear-gradient(0deg, #eda662 0%, #dc7749 100%);
+}
+
+@media (max-width: 824px) {
+  .location {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  .navbar-right {
+    flex-direction: row;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .price-tag {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+}

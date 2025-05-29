@@ -1,0 +1,48 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* 👈 This gives you visibility into the next section */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills height without distortion */
+  display: block;
+}
+
+.white-label {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  width: 90%;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.label-title {
+  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  margin: 0;
+  font-weight: 600;
+}
+
+.label-address {
+  margin-top: 0.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .white-label {
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    width: calc(100% - 48px); /* 24px padding on both sides */
+  }
+}

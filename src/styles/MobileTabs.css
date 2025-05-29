@@ -1,0 +1,55 @@
+.mobile-tabs {
+  padding: 1rem;
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-floorplan {
+  width: 100%;
+  display: block;
+}
+
+.floorplan-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-family: "Zodiak", serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #000;
+  background-color: #f6faf9;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tab-buttons button.active-tab {
+  background-color: #264653;
+  color: #fff;
+}
+
+svg path,
+svg rect {
+  cursor: default;
+}
+
+svg .active {
+  fill: rgba(204, 44, 0, 0.2);
+  stroke: red;
+  stroke-width: 2;
+}
